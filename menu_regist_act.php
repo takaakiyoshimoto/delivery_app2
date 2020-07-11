@@ -2,6 +2,8 @@
 <?php
 $recivedata_id = $_GET["recivedata_id"];
 $menu_title=$_GET["menu_title"];
+$data=$_GET["data"];
+
 
 require "funcs.php";
 $pdo = db_con();
@@ -18,7 +20,7 @@ if($status==false){
     sql_error($stmt);
 }
 //menu_registに戻す
-$location="Location: menu_regist.php?recivedata_id=".$recivedata_id;
+$location="Location: menu_regist.php?recivedata_id=".$recivedata_id."&data=".$data;
 header($location);
 
 ?>

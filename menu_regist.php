@@ -40,7 +40,7 @@ while($result = $stmt->fetch(PDO::FETCH_ASSOC)){
 $view.= "</table>";
 
 $hidden = "<input type='hidden' name='recivedata_id' value=".$recivedata_id.">";
-$hidden .= "<input type='hidden' name='data' value=".$recivedata_id.">";
+$hidden .= "<input type='hidden' name='data' value=".$data.">";
 ?>
 
 <html>
